@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1vw;
+  margin: 3vh 3vw;
+}
+
+.movie {
+  background-color: darkslategray;
+  color: azure;
+  padding: 5vh 2vw;
+
+}
+
+.genres {
+  font-family: 0.5rem;
+  font-weight: lighter;
+  padding: 2vh 2vw;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+  section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    margin: 3vh 3vw;
+  }
+}
